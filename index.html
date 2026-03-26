@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandini Chellumahanthi | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0f2e, #2a1a5e, #3a0ca3);
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+
+nav a {
+  color: #e0dfff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4dff;
+  text-shadow: 0 0 10px #ff4dff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  background: linear-gradient(45deg, #ff4dff, #00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* BUTTON */
+.btn {
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #ff4dff, #00f7ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(255,77,255,0.6);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0,247,255,0.9);
+}
+
+/* SECTION */
+section {
+  padding: 80px 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(45deg, #ff4dff, #00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255,77,255,0.4);
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CONTACT */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ccc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h3>Nandini Chellumahanthi</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hello, I'm <span>Nandini Chellumahanthi</span></h1>
+  <p>Full Stack Developer | Creative Problem Solver</p>
+  <p id="typing"></p>
+
+  <div>
+    <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+    <button class="btn" onclick="scrollToSection('contact')">Contact Me</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a passionate B.Tech IT student focused on full-stack development.
+      I enjoy building real-world applications and continuously learning modern technologies.
+    </p>
+    <br>
+    <p><b>Education:</b> Gayatri Vidya Parishad College of Engineering (2024–2028)</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Python, C, C++, Java</div>
+    <div class="card">Node.js, Express</div>
+    <div class="card">MySQL</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <!-- Medicine Reminder -->
+    <div class="card">
+      <h3>Medicine Reminder Pro</h3>
+      <p>Healthcare reminder app with real-time UI updates.</p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+      <br>
+      <a href="https://nandinichellumahanthi.github.io/Linkedin/" target="_blank" class="btn">Live</a>
+      <a href="https://github.com/nandinichellumahanthi/Linkedin.git" target="_blank" class="btn">GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Fake Currency Detection System (Ongoing Research)</h3>
+      <p>Developing an intelligent system to detect counterfeit</p>
+      <p>Indian currency using image processing and machine learning </p>
+      <p>techniques. The system analyzes security features like watermarks,</p>
+      <p>patterns, and textures to classify notes as real or fake.</p>
+      <p><b>Tech:</b> Python, OpenCV, Machine Learning</p>
+      <p><i>Research in Progress 🚀</i></p>
+    </div>
+
+    <!-- Student Management -->
+    <div class="card">
+      <h3>Student Management System (Ongoing)</h3>
+      <p>Building a full-stack web application to manage student records,</p>
+      <p>including adding, updating, and deleting student data.</p>
+      <p>Integrating frontend with backend APIs for real-time data handling.</p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript, Node.js</p>
+      <p><i>Project in Development 🚀</i></p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <h2>Experience</h2>
+  <div class="card" align="center">
+    <p>Looking for Internship Opportunities 🚀</p>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+  <h2>Achievements</h2>
+  <div class="grid">
+    <div class="card">Technology Fellowship – Algo University</div>
+    <div class="card">AI Hackathon Participant</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send Message</button>
+
+    <p>Email: nandini081806@gmail.com</p>
+    <p>Phone: 7569191628</p>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Nandini Chellumahanthi. All rights reserved.</p>
+</footer>
+
+<script>
+/* Typing Animation */
+const text = ["Developer", "Designer", "Learner"];
+let i = 0, j = 0;
+let current = "", isDeleting = false;
+
+function type() {
+  current = text[i];
+  document.getElementById("typing").textContent =
+    current.substring(0, j);
+
+  if (!isDeleting && j < current.length) {
+    j++;
+  } else if (isDeleting && j > 0) {
+    j--;
+  } else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) i = (i + 1) % text.length;
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+
+/* Scroll */
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+</script>
+
+</body>
+</html>
